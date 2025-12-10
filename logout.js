@@ -12,7 +12,7 @@ $(document).on("click", ".logout", function (e) {
     if (isFlutterApp) {
         sendLogoutToFlutter();
     } else {
-        customConfirm("Are you sure you want to delete this?").then((result) => {
+        customConfirm("Are you sure you want to logout").then((result) => {
             if (result) {
                 window.location.href = "logout.php";
             } else {
